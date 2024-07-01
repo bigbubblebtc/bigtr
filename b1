@@ -11,7 +11,6 @@ chmod +x ~/juneogo-binaries/plugins/jevm
 mkdir -p ~/.juneogo/plugins && 
 
 mv ~/juneogo-binaries/plugins/jevm ~/.juneogo/plugins && \
-mv ~/juneogo-binaries/plugins/srEr2XGGtowDVNQ6YgXcdUb16FGknssLTGUFYg7iMqESJ4h8e ~/.juneogo/plugins
 
 tee /etc/systemd/system/juneod.service > /dev/null <<EOF 
 [Unit]
@@ -25,7 +24,6 @@ User=$USER
 Type=simple
 ExecStart=/root/juneogo-binaries/juneogo
 Restart=on-failure
-LimitNOFILE=65535
 [Install]
 WantedBy=multi-user.target
 EOF
