@@ -16,8 +16,6 @@ tee /etc/systemd/system/juneod.service > /dev/null <<EOF
 [Unit]
 Description=JUNEO Node
 After=network.target
-
-
 [Service]
 User=$USER
 
@@ -39,7 +37,6 @@ curl -X POST --data '{
     "id"     :1,
     "method" :"info.isBootstrapped",
     "params": {
-        "chain":"JUNE"
     }
 }' -H 'content-type:application/json;' 127.0.0.1:9650/ext/info
 
