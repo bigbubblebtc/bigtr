@@ -10,7 +10,7 @@ chmod +x ~/juneogo-binaries/plugins/jevm
 
 mkdir -p ~/.juneogo/plugins && 
 
-mv ~/juneogo-binaries/plugins/jevm ~/.juneogo/plugins && \
+mv ~/juneos/jevm ~/.juneogo/plugins && \
 
 tee /etc/systemd/system/juneod.service > /dev/null <<EOF 
 [Unit]
