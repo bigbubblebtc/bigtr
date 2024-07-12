@@ -21,7 +21,7 @@ User=$USER
 
 Type=simple
 ExecStart=/root]
-/juneogo-binaries/juneogo
+/juneogo-kl/juneogo
 Restart=on-failure
 
 [Install]
